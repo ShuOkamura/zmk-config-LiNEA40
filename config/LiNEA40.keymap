@@ -29,9 +29,6 @@
     require-prior-idle-ms = <200>;
 };
 
-
-
-
 //mouse cursol
 
 &mmv {
@@ -74,7 +71,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -146,7 +143,7 @@
 &mt LCTRL LS(CAPS)  &kp LEFT_ALT  &kp TAB  &trans        &mt LCTRL LANG2  &lt 5 SPACE    &lt 3 ENTER  &lt 2 LANG1                &kp RALT  &kp C_MUTE  &mt RIGHT_GUI DELETE
             >;
 
-            sensor-bindings = <&re_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&re_kp C_VOLUME_UP K_VOLUME_DOWN>;
         };
 
         //1
